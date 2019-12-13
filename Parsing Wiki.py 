@@ -1,0 +1,6 @@
+from bs4 import BeautifulSoup
+import requests
+
+soup = BeautifulSoup('https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M', 'lxml')
+
+print(soup.prettify())
